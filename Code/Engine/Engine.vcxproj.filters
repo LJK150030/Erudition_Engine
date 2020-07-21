@@ -8,15 +8,47 @@
     <Filter Include="Math">
       <UniqueIdentifier>{392f0dcc-e60a-42c5-acd8-e350938acc93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Math\2D">
+      <UniqueIdentifier>{a8c08585-65e9-4248-a31f-3283833e643c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\3D">
+      <UniqueIdentifier>{0b4762dc-1e1d-43d4-9633-2c572c55391a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Math\Vec2.cpp">
+    <ClCompile Include="Math\MathUtils.cpp">
       <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vec2.cpp">
+      <Filter>Math\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vec3.cpp">
+      <Filter>Math\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineCommon.cpp" />
+    <ClCompile Include="Core\ErrorWarningAssert.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StringUtils.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Math\Vec2.hpp">
+    <ClInclude Include="EngineCommon.hpp" />
+    <ClInclude Include="Math\MathUtils.hpp">
       <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec2.hpp">
+      <Filter>Math\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec3.hpp">
+      <Filter>Math\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ErrorWarningAssert.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StringUtils.hpp">
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
