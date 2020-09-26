@@ -40,25 +40,3 @@ const std::string Stringf(const int max_length, const char* format, ...)
 
 	return return_value;
 }
-
-std::vector<std::string> SplitStringOnDelimiter(const std::string& original_string, const char delimiter)
-{
-	std::vector<std::string> split_strings;
-
-	std::size_t start_pos = 0;
-	std::size_t end_pos = original_string.find_first_of(delimiter, start_pos);
-
-	//goes till it finds the end of the string
-	while (end_pos != std::string::npos)
-	{
-		split_strings.push_back(original_string.substr(start_pos, end_pos - start_pos));
-
-		start_pos = end_pos + 1;
-		end_pos = original_string.find_first_of(delimiter, start_pos);
-	}
-
-	//because it exits loop on the last substring, manually add it
-	split_strings.push_back(original_string.substr(start_pos, end_pos));
-
-	return split_strings;
-}

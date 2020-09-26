@@ -165,17 +165,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Architecture\SinglyLinkedLists_Int.cpp" />
     <ClCompile Include="Core\ErrorWarningAssert.cpp" />
+    <ClCompile Include="Core\FileIOUtils.cpp" />
     <ClCompile Include="Core\StringUtils.cpp" />
+    <ClCompile Include="Core\Time.cpp" />
     <ClCompile Include="EngineCommon.cpp" />
     <ClCompile Include="Math\MathUtils.cpp" />
+    <ClCompile Include="Math\Vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Architecture\SinglyLinkedLists_Int.hpp" />
     <ClInclude Include="Core\ErrorWarningAssert.hpp" />
+    <ClInclude Include="Core\FileIOUtils.hpp" />
     <ClInclude Include="Core\StringUtils.hpp" />
+    <ClInclude Include="Core\Time.hpp" />
     <ClInclude Include="EngineCommon.hpp" />
     <ClInclude Include="Math\MathUtils.hpp" />
-    <ClInclude Include="Math\Vec2.h" />
+    <ClInclude Include="Math\Vec2.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

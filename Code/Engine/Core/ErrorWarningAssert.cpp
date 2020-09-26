@@ -31,7 +31,7 @@ bool IsDebuggerAvailable()
 	}
 
 	// Get a handle to the IsDebuggerPresent() function in KERNEL32.DLL
-	static IsDebuggerPresentFunc* is_debugger_present_func = static_cast<IsDebuggerPresentFunc*>(GetProcAddress(
+	static IsDebuggerPresentFunc* is_debugger_present_func = reinterpret_cast<IsDebuggerPresentFunc*>(GetProcAddress(
 		h_instance_kernel32, "IsDebuggerPresent"));
 	
 	if (!is_debugger_present_func)

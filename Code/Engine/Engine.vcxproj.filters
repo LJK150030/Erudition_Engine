@@ -17,6 +17,9 @@
     <Filter Include="Math\3D">
       <UniqueIdentifier>{0b4762dc-1e1d-43d4-9633-2c572c55391a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Architecture">
+      <UniqueIdentifier>{79c3c854-1376-4bf5-b803-b2c3a768b5cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Math\MathUtils.cpp">
@@ -28,6 +31,18 @@
     </ClCompile>
     <ClCompile Include="Core\StringUtils.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vec2.cpp">
+      <Filter>Math\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Time.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FileIOUtils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Architecture\SinglyLinkedLists_Int.cpp">
+      <Filter>Architecture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,8 +56,17 @@
     <ClInclude Include="Core\StringUtils.hpp">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Math\Vec2.h">
+    <ClInclude Include="Math\Vec2.hpp">
       <Filter>Math\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Time.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FileIOUtils.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Architecture\SinglyLinkedLists_Int.hpp">
+      <Filter>Architecture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
